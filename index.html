@@ -33,7 +33,7 @@
   <body>
     <section class="content">
       <!-- Navbar section -->
-      <div class="navbar">
+      <div class="navbar" id="fixed__navabar">
         <div class="container">
           <div class="nav__item">
             <div class="nav__item__menu__bars">
@@ -502,7 +502,6 @@
       <div class="footer">
         <div class="container">
           <div class="footer__top">
-            
             <div class="footer__top__left">
               <div class="footer__logo">
                 <img src="./icon/logo.svg" alt="footer__log" />
@@ -570,7 +569,19 @@
         </div>
       </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./index.js">
+      let wrapper = document.getElementById("paralax-tutorial");
+  wrapper.addEventListener("mousemove", (e) => {
+    document.querySelectorAll(".soliders").forEach((i) => {
+      let speed = i.getAttribute("data-speed");
+
+      const x = (window.innerWidth - e.pageX * speed) / 100;
+      const y = (window.innerHeight - e.pageY * speed) / 100;
+
+      i.style.transform = `translateX(${x}px)`;
+    });
+  });
+    </script>
   </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="./index.js"></script>
 </html>

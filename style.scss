@@ -73,7 +73,10 @@ li {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 1111;
+    z-index: 22222;
+    &.fixed {
+      backdrop-filter: blur(10px);
+    }
     .nav__item {
       display: flex;
       align-items: center;
@@ -158,7 +161,7 @@ li {
         .text__one {
           max-width: 827px;
           font-size: 32px;
-          font-weight: 300;
+          font-weight: 500;
           line-height: 48px;
           letter-spacing: 0px;
           color: var(--light);
@@ -543,7 +546,6 @@ li {
       align-items: center;
       justify-content: center;
       width: 100%;
-      height: 1287px;
       .swiper {
         width: 100%;
         height: 100%;
@@ -909,6 +911,7 @@ li {
   @media (max-width: 768px) {
     .navbar {
       .nav__item {
+        padding: 16px 0;
         &__menu__bars {
           display: block;
         }
@@ -932,10 +935,25 @@ li {
     }
 
     .slider__avatar {
-      display: none;
       .silder__content {
         width: 100%;
+        top: 205px;
+        align-items: center;
         flex-direction: column;
+        .silder__content__left {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          border: 1px solid red;
+          .text__one {
+            text-align: center;
+            max-width: 343px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 28px;
+            margin: 0 0 165px 0;
+          }
+        }
       }
     }
     .losses {
@@ -1209,7 +1227,7 @@ li {
   @media (max-width: 460px) {
     .lows {
       .dots2__img {
-        left: 14% !important;
+        left: 0;
       }
     }
   }

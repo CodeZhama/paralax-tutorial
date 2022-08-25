@@ -1,17 +1,9 @@
-function paralaxTutorial() {
-  let wrapper = document.getElementById("paralax-tutorial");
-  wrapper.addEventListener("mousemove", (e) => {
-    document.querySelectorAll(".soliders").forEach((i) => {
-      let speed = i.getAttribute("data-speed");
-
-      const x = (window.innerWidth - e.pageX * speed) / 100;
-      const y = (window.innerHeight - e.pageY * speed) / 100;
-
-      i.style.transform = `translateX(${x}px)`;
-    });
-  });
-}
-paralaxTutorial();
+window.addEventListener("scroll", () => {
+  const nav = document.querySelector(".navbar");
+  const navItem = document.querySelector(".nav__item");
+  nav.classList.toggle("fixed", window.scrollY > 20);
+  navItem.classList.toggle("fixed", window.scrollY > 20);
+});
 
 function swriperFunc() {
   var swiper = new Swiper(".mySwiper", {
