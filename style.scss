@@ -439,16 +439,19 @@ li {
   .lows {
     position: relative;
     width: 100%;
-    height: 1000px;
+
     background-color: var(--bg-color);
+    border: 1px solid red;
     .silver__sloy {
       position: absolute;
       width: 100%;
+      height: 100%;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
     .silver__sloy2 {
+      height: 100%;
       width: 100%;
       position: absolute;
       top: 50%;
@@ -456,6 +459,7 @@ li {
       transform: translate(-50%, -50%);
     }
     .sloy3 {
+      height: 100%;
       width: 100%;
       position: absolute;
       top: 50%;
@@ -468,7 +472,7 @@ li {
       justify-content: center;
       width: 100%;
       height: 1000px;
-      padding: 0 200px;
+      // padding: 0 200px;
       .swiper {
         width: 100%;
         height: 100%;
@@ -610,7 +614,7 @@ li {
         font-weight: 400;
         line-height: 29px;
         letter-spacing: 0px;
-        // color: var(--neun);
+        color: var(--neun);
         margin-bottom: 42px;
       }
     }
@@ -799,28 +803,33 @@ li {
       }
     }
   }
-
-  // .paralax__top {
-  //   height: 100vh;
-  //   max-height: 100vh;
-  //   background: url("./images/soldiers.jpg") no-repeat center;
-  //   background-size: cover;
-  //   display: flex;
-  //   align-items: center;
-  //   justify-content: center;
-  //   overflow: hidden;
-  //   .soliders {
-  //     position: absolute;
-  //     bottom: 11%;
-  //     left: 12%;
-  //     width: 200px;
-  //   }
-  //   .soliders-4 {
-  //     left: 45%;
-  //     bottom: 11%;
-  //     width: 350px;
-  //   }
-  // }
+  .vedio {
+    width: 100%;
+    position: relative;
+    // background-color: var(--bg-color);
+    .el {
+      width: 100%;
+      max-height: 100vh;
+      height: 100vh;
+      background: url("./images/soldiers.jpg") no-repeat center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      .soliders {
+        position: absolute;
+        bottom: 11%;
+        left: 12%;
+        width: 200px;
+      }
+      .soliders-4 {
+        left: 45%;
+        bottom: 11%;
+        width: 350px;
+      }
+    }
+  }
 
   @media (max-width: 768px) {
     .navbar {
@@ -848,7 +857,30 @@ li {
     }
 
     .slider__avatar {
-      height: 838px;
+      .silder__content {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+
+    .news {
+      .news__inner {
+        .news__header {
+          .header__btn {
+            display: none;
+          }
+        }
+        .news__main {
+          .news__main__flex {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+
+    .slider__avatar {
+      height: 100vh;
     }
   }
 }
