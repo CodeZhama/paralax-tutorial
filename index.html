@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Paralaxs</title>
+    <!-- Icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Icon link -->
+    <!-- Link swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Link swiper -->
+    <!-- Link font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link font -->
+  </head>
+  <body>
+    <section class="content">
+      <!-- Navbar section -->
+      <div class="navbar">
+        <div class="container">
+          <div class="nav__item">
+            <div class="nav__item__menu__bars">
+              <i class="icon icon-bars"></i>
+            </div>
+            <div class="logo">
+              <img src="./icon/logo.svg" alt="logo" />
+            </div>
+            <div class="right__part">
+              <div class="nav__ul">
+                <li class="nav__li">
+                  <a href="" class="nav__link">
+                    <p class="nav__link">Новости</p>
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a href="" class="nav__link">
+                    <p class="nav__link">Деятельность</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a href="" class="nav__link">
+                    <p class="nav__link">Творческая мастерская</p>
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a href="" class="nav__link">
+                    <p class="nav__link">Библиотека</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a href="" class="nav__link">
+                    <p class="nav__link">Медиатека</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                </li>
+                <li class="nav__li">
+                  <a href="" class="nav__link">
+                    <p class="nav__link">О нас</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                  </a>
+                </li>
+              </div>
+              <div class="social__search">
+                <i class="icon icon-search different"></i>
+                <i class="icon icon-wk different res__icon"></i>
+                <i class="icon icon-telegram different res__icon"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aupto play slider -->
+      <div class="slider__avatar">
+        <div class="silder__content">
+          <div class="silder__content__left">
+            <p class="text__one">
+              Проект, нацеленный на<strong>
+                сохранение исторической памяти</strong
+              >
+              о военных преступленях нацистов и их пособников в годы
+              <strong>Великой Отечественной войны</strong>
+            </p>
+
+            <div class="other__date">
+              <h1 class="other__date__header">17 июля</h1>
+              <p class="other__date__desc">
+                В этот день в 1942-м году началось <br />
+                наступление нацистских войск на Сталинград
+              </p>
+              <div class="date__btn">
+                <i class="icon icon-date"></i>
+                <p class="date__btn__text">Посмотреть другие даты</p>
+              </div>
+            </div>
+          </div>
+          <div class="silder__content__right">
+            <div class="item__store">
+              <h4>Брянский Бухенвальд</h4>
+              <p>
+                История и свидетельства одного из самых крупных нацистких
+                лагерей
+              </p>
+            </div>
+            <div class="item__store">
+              <h4>Брянский Бухенвальд</h4>
+              <p>
+                История и свидетельства одного из самых крупных нацистких
+                лагерей
+              </p>
+            </div>
+            <div class="item__store">
+              <h4>Брянский Бухенвальд</h4>
+              <p>
+                История и свидетельства одного из самых крупных нацистких
+                лагерей
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./images/slider1.png" alt="slider1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./images/slider1.png" alt="slider2" />
+            </div>
+            <img src="./images/slider1.png" alt="slider3" />
+            <div class="swiper-slide"></div>
+          </div>
+        </div>
+      </div>
+      <!-- News section -->
+      <div class="news">
+        <div class="news__inner">
+          <div class="container">
+            <div class="news__header">
+              <h3>Новости</h3>
+              <div class="header__btn">
+                <button class="header__btn__item">Смотреть все новости</button>
+              </div>
+            </div>
+
+            <div class="news__main">
+              <h3 class="news__main__title">Главное</h3>
+              <div class="news__main__flex">
+                <div class="flex__item">
+                  <div class="flex__item__left">
+                    <img src="./images/main1.png" alt="" />
+                  </div>
+                  <div class="flex__item__right">
+                    <h6>13.06.2022</h6>
+                    <h4>Заголовок новости</h4>
+                    <p>
+                      История и свидетельства одного из самых крупных нацистких
+                      лагерей, История и свидетельства одного из самых крупных
+                      нацистких лагерей ...
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex__item">
+                  <div class="flex__item__left">
+                    <img src="./images/main2.png" alt="" />
+                  </div>
+                  <div class="flex__item__right">
+                    <h6>13.06.2022</h6>
+                    <h4>Заголовок новости</h4>
+                    <p>
+                      История и свидетельства одного из самых крупных нацистких
+                      лагерей, История и свидетельства одного из самых крупных
+                      нацистких лагерей ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rest">
+              <h1 class="rest__header">Остальное</h1>
+
+              <div class="rest__scroll__hash">
+                <div>#Выставки</div>
+                <div>#Заседания суда</div>
+                <div>#Творческая мастерская</div>
+                <div>#Поисковые работы</div>
+                <div>#Документы</div>
+              </div>
+
+              <div class="rest__box">
+                <div class="rest__box__item">
+                  <div class="rest__item__left">
+                    <img src="./images/rest1.png" alt="rest1" />
+                  </div>
+                  <div class="rest__item__right">
+                    <h6>13.06.2022</h6>
+                    <h4>Заголовок новости</h4>
+                    <p>
+                      История и свидетельства одного из самых крупных нацистких
+                      лагерей, История и свидетельства одного из самых крупных
+                      нацистких лагерей одного из самых крупных нацистких
+                      лагерей ...
+                    </p>
+                  </div>
+                </div>
+                <div class="rest__box__item">
+                  <div class="rest__item__left">
+                    <img src="./images/rest1.png" alt="rest1" />
+                  </div>
+                  <div class="rest__item__right">
+                    <h6>13.06.2022</h6>
+                    <h4>Заголовок новости</h4>
+                    <p>
+                      История и свидетельства одного из самых крупных нацистких
+                      лагерей, История и свидетельства одного из самых крупных
+                      нацистких лагерей одного из самых крупных нацистких
+                      лагерей ...
+                    </p>
+                  </div>
+                </div>
+                <div class="rest__box__item">
+                  <div class="rest__item__left">
+                    <img src="./images/rest1.png" alt="rest1" />
+                  </div>
+                  <div class="rest__item__right">
+                    <h6>13.06.2022</h6>
+                    <h4>Заголовок новости</h4>
+                    <p>
+                      История и свидетельства одного из самых крупных нацистких
+                      лагерей, История и свидетельства одного из самых крупных
+                      нацистких лагерей одного из самых крупных нацистких
+                      лагерей ...
+                    </p>
+                  </div>
+                </div>
+                <div class="rest__box__item">
+                  <div class="rest__item__left">
+                    <img src="./images/rest1.png" alt="rest1" />
+                  </div>
+                  <div class="rest__item__right">
+                    <h6>13.06.2022</h6>
+                    <h4>Заголовок новости</h4>
+                    <p>
+                      История и свидетельства одного из самых крупных нацистких
+                      лагерей, История и свидетельства одного из самых крупных
+                      нацистких лагерей одного из самых крупных нацистких
+                      лагерей ...
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Законы больше -->
+
+      <div class="lows">
+        <img class="silver__sloy" src="./images/Union (1).png" alt="" />
+        <img class="silver__sloy2" src="./images/Union (2).png" alt="" />
+        <img class="sloy3" src="./images/Mask group (1).png" alt="img" />
+        <div class="contaier">
+          <div class="lows__slider">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card__left">
+                      <img src="./images/vladimir putin.png" alt="" />
+                    </div>
+                    <div class="card__right">
+                      <h4>Владимир Путин</h4>
+                      <h6>Президент Российской Федерации</h6>
+                      <p>
+                        Правда об истории и о ужасной трагедии, которая постигла
+                        человечество во время Второй мировой войны – вот об этом
+                        мы никогда не должны забывать. Не должны предавать...
+                        своих предков, своих отцов, дедов
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card__left">
+                      <img src="./images/vladimir putin.png" alt="" />
+                    </div>
+                    <div class="card__right">
+                      <h4>Владимир Путин</h4>
+                      <h6>Президент Российской Федерации</h6>
+                      <p>
+                        Правда об истории и о ужасной трагедии, которая постигла
+                        человечество во время Второй мировой войны – вот об этом
+                        мы никогда не должны забывать. Не должны предавать...
+                        своих предков, своих отцов, дедов
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <div class="card__left">
+                      <img src="./images/vladimir putin.png" alt="" />
+                    </div>
+                    <div class="card__right">
+                      <h4>Владимир Путин</h4>
+                      <h6>Президент Российской Федерации</h6>
+                      <p>
+                        Правда об истории и о ужасной трагедии, которая постигла
+                        человечество во время Второй мировой войны – вот об этом
+                        мы никогда не должны забывать. Не должны предавать...
+                        своих предков, своих отцов, дедов
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Потери section -->
+      <div class="losses">
+        <div class="container">
+          <div class="losses__header">
+            <h3>Потери</h3>
+            <h6>В годы Великой Отечественной</h6>
+            <div class="perished">
+              <div class="perished__number">
+                <span class="conuter1" id="counter1"></span>
+                <div class="conuter1__text">млн</div>
+              </div>
+              <div class="peished__text">
+                <div class="peished__text_one">погибло</div>
+                <div class="peished__text__two">советских граждан</div>
+              </div>
+            </div>
+
+            <div class="from__are">из них</div>
+          </div>
+        </div>
+
+        <div class="four__losses">
+          <div class="four__losses__item">
+            <div class="losses__top">
+              <div class="sloy__bg"></div>
+              <img src="./images/losses.png" alt="image" />
+            </div>
+            <div class="losses__bottom">
+              <div class="losses__bottom__header">
+                <span id="src1"></span>
+                <span>млн</span>
+              </div>
+              <div class="losses__bottom__desc">беззащитные мирные жители</div>
+            </div>
+          </div>
+
+          <div class="four__losses__item">
+            <div class="losses__top">
+              <div class="sloy__bg"></div>
+              <img src="./images/losses.png" alt="image" />
+            </div>
+            <div class="losses__bottom">
+              <div class="losses__bottom__header">
+                <span id="src2"></span>
+                <span>млн</span>
+              </div>
+              <div class="losses__bottom__desc">беззащитные мирные жители</div>
+            </div>
+          </div>
+
+          <div class="four__losses__item">
+            <div class="losses__top">
+              <div class="sloy__bg"></div>
+              <img src="./images/losses.png" alt="image" />
+            </div>
+            <div class="losses__bottom">
+              <div class="losses__bottom__header">
+                <span id="src3"></span>
+                <span>млн</span>
+              </div>
+              <div class="losses__bottom__desc">беззащитные мирные жители</div>
+            </div>
+          </div>
+
+          <div class="four__losses__item">
+            <div class="losses__top">
+              <div class="sloy__bg"></div>
+              <img src="./images/losses.png" alt="image" />
+            </div>
+            <div class="losses__bottom">
+              <div class="losses__bottom__header">
+                <span id="src4"></span>
+                <span>млн</span>
+              </div>
+              <div class="losses__bottom__desc">беззащитные мирные жители</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bit__counter">
+          <div class="container">
+            <div class="big__counter__item">
+              <div class="big__counter__item__card">
+                <h1 id="big__number" class="big__number"></h1>
+                <p class="big__desc">
+                  регионов Российской Федерации подверглась нацистской оккупации
+                  в годы Великой Отечественной войны
+                </p>
+              </div>
+              <div class="big__counter__item__card">
+                <h1 class="big__number"><<span id="big__number2"></span></h1>
+                <p class="big__desc">
+                  регионов Российской Федерации подверглась нацистской оккупации
+                  в годы Великой Отечественной войны
+                </p>
+              </div>
+
+              <div class="big__counter__item__card">
+                <h1 id="big__number3" class="big__number"></h1>
+                <p class="big__desc">
+                  регионов Российской Федерации подверглась нацистской оккупации
+                  в годы Великой Отечественной войны
+                </p>
+              </div>
+              <div class="big__counter__item__card">
+                <h1 id="big__number4" class="big__number"></h1>
+                <p class="big__desc">
+                  регионов Российской Федерации подверглась нацистской оккупации
+                  в годы Великой Отечественной войны
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__top__left">
+              <div class="footer__logo">
+                <img src="./icon/logo.svg" alt="footer__log" />
+              </div>
+              <p class="footer__left__text">
+                2022 Федеральный проект «Без срока давности» ООД «Поисковое
+                движение России»
+              </p>
+              <div class="footer__social">
+                <i class="icon icon-wk"></i>
+                <i class="icon icon-telegram"></i>
+                <i></i>
+              </div>
+            </div>
+            <div class="footer__top__rigth">
+              <ul>
+                <li class="li__title">Деятельность</li>
+                <li>Судебные процессы</li>
+                <li>Поисковые работы</li>
+                <li>Работа с архивая</li>
+                <li>Научные исследования</li>
+                <li>Образовательный модуль</li>
+              </ul>
+              <ul class="nth__second">
+                <li></li>
+                <li>Организация выстовок</li>
+                <li>Конкурсы</li>
+                <li>Кинопоказы</li>
+                <li>Кинопоказы</li>
+                <li>День единных действий</li>
+              </ul>
+              <ul>
+                <li class="li__title">Библиотека</li>
+                <li>База архивных документов</li>
+                <li>Сборники по регионам</li>
+                <li>Научные публикации</li>
+              </ul>
+              <ul>
+                <li class="li__title">Медиатека</li>
+                <li>Документальные фильмы</li>
+                <li>Видеохроники</li>
+                <li>Записи онлайн-трансляций</li>
+                <li>Фотографии</li>
+              </ul>
+              <ul>
+                <li class="li__title">о нас</li>
+                <li>Эксперты проекта</li>
+                <li>Проекты</li>
+                <li>СМИ о нас</li>
+                <li>Контакты</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <div class="footer__bottom__left">
+              <p>Карта сайта</p>
+              <p>Политика конфиденциальности</p>
+            </div>
+            <div class="footer__bottom__right">
+              <span class="span__left">Разработка сайта</span>
+              <span class="span__right">FACTORRIAL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner Paralax -->
+      <!-- <div class="paralax__top" id="wrapper">
+        <img
+          class="soliders"
+          data-speed="-6"
+          src="./images/soldiers-3.png"
+          alt=""
+        />
+        <img
+          class="soliders soliders-4"
+          data-speed="-9"
+          src="./images/soldiers-4.png"
+          alt=""
+        />
+      </div> -->
+    </section>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="./index.js">
+    // let wrapper = document.getElementById("wrapper");
+    // wrapper.addEventListener("mousemove", (e) => {
+    //   document.querySelectorAll(".soliders").forEach((i) => {
+    //     let speed = i.getAttribute("data-speed");
+
+    //     const x = (window.innerWidth - e.pageX * speed) / 100;
+    //     const y = (window.innerHeight - e.pageY * speed) / 100;
+
+    //     i.style.transform = `translateX(${x}px)`;
+    //   });
+    // });
+  </script>
+</html>
